@@ -1,0 +1,26 @@
+ <div class="panel panel-success">
+    <div class="panel-heading"><span class="lead">Login Form </span></div>
+	 <div class="modal-dialog">
+		<div class="formcontainer">
+			<form name="userForm"  class="form-horizontal" (ngSubmit)="formSubmit()">
+				<!-- EMAIL -->
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label>Email</label>
+						<input type="text" name="email" class="form-control" [(ngModel)]="user.email" required>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label>Password</label>
+						<input type="password" name="password" class="form-control" [(ngModel)]="user.password" required>
+					</div>
+				</div>
+				<div class="row">
+				<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div> 
